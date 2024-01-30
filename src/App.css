@@ -1,0 +1,64 @@
+/* Home.css */
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation: scaleIn 3.5s ease-in-out infinite; /* Adjust the animation duration and timing function */
+}
+
+.purple-text {
+  color: rgb(41, 65, 219);
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar > div {
+  height: 100%;
+  background-color: #4c7faf;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.animated-column {
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.animated-column:hover {
+  transform: scale(1.09);
+  color: whitesmoke;
+  background-color: rgb(29, 181, 231);
+  border: 2px solid white;
+
+}
+.animated-column button {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.animated-column:hover button {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+
